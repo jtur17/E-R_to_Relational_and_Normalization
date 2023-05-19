@@ -30,7 +30,9 @@ VALUES
   ('DEF456', 5, 'SUV');
 
 
-INSERT INTO Airbags (Matricula, Numero_de_airbags)
+INSERT INTO Airbags (Matricula, Posicion, Numero_de_airbags)
 VALUES
-  ('ABC123', 6),
-  ('DEF456', 4);
+  ('ABC123', 'Piloto', 2),
+  ('ABC123', 'Copiloto', 1),
+  ('DEF456', 'Piloto', 3),
+  ('DEF456', 'Copiloto', 2);

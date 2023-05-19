@@ -48,7 +48,8 @@ CREATE TABLE Coche (
 
 CREATE TABLE Airbags (
   Matricula VARCHAR(10),
+  Posicion VARCHAR(20),
   Numero_de_airbags INT,
-  PRIMARY KEY (Matricula),
+  PRIMARY KEY (Matricula, Posicion),
   FOREIGN KEY (Matricula) REFERENCES Vehiculo(Matricula)
 );
