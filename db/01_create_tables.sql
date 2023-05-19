@@ -28,8 +28,6 @@ CREATE TABLE Vehiculo (
   FOREIGN KEY (Empleado_ID) REFERENCES Empleado(ID_Empleado)
 );
 
-
-
 CREATE TABLE Moto (
   Matricula VARCHAR(10),
   Cilindrada INT,
