@@ -29,6 +29,7 @@ CREATE TABLE Vehiculo (
 );
 
 
+
 CREATE TABLE Moto (
   Matricula VARCHAR(10),
   Cilindrada INT,
