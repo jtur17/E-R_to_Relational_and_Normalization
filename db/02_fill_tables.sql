@@ -1,4 +1,3 @@
-
 INSERT INTO Cliente (DNI, Nombre, Telefono)
 VALUES
   (12345678, 'Juan Pérez', '123-456-7890'),
@@ -17,12 +16,6 @@ VALUES
   ('DEF456', 'Honda Civic', 'Azul', 18000.00, 87654321, 2, '2023-05-16'),
   ('MOT001', 'Harley Davidson', 'Negro', 15000.00, 87654321, 1, '2023-05-17'),
   ('MOT002', 'Yamaha MT-07', 'Blanco', 12000.00, 12345678, 2, '2023-05-19');
-
-
-INSERT INTO ClienteEmpleado (DNI, Empleado_ID)
-VALUES
-  (12345678, 1),
-  (87654321, 2);
 
 
 INSERT INTO Moto (Matricula, Cilindrada, Tipo_de_moto)

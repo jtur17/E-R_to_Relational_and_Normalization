@@ -28,13 +28,6 @@ CREATE TABLE Vehiculo (
   FOREIGN KEY (Empleado_ID) REFERENCES Empleado(ID_Empleado)
 );
 
-CREATE TABLE ClienteEmpleado (
-  DNI INT,
-  Empleado_ID INT,
-  PRIMARY KEY (DNI, Empleado_ID),
-  FOREIGN KEY (DNI) REFERENCES Cliente(DNI),
-  FOREIGN KEY (Empleado_ID) REFERENCES Empleado(ID_Empleado)
-);
 
 CREATE TABLE Moto (
   Matricula VARCHAR(10),
