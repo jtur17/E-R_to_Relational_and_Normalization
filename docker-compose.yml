@@ -1,0 +1,21 @@
+version: '3.3'
+services:
+
+# BASE DE DATOS (MARIADB)
+
+  db:
+
+    container_name: db_prueba
+    image: mariadb:latest
+    restart: always
+    environment:
+      - MYSQL_USER=test
+      - MYSQL_PASSWORD=test
+      - MYSQL_DATABASE=concesionario
+      - MYSQL_ROOT_PASSWORD=root
+    ports:
+      - "3307:3306"
+    volumes:
+
+      # Tabla
+      - ./db/01_create_tables.sql:/docker-entrypoint-initdb.d/01_create_tables.sql
