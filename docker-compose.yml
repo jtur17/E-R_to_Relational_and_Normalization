@@ -5,7 +5,7 @@ services:
 
   db:
 
-    container_name: db_prueba
+    container_name: db_concesionario
     image: mariadb:latest
     restart: always
     environment:
