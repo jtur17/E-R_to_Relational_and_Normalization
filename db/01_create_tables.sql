@@ -7,7 +7,7 @@ CREATE TABLE Cliente (
 );
 
 CREATE TABLE Empleado (
-  ID_Empleado INT PRIMARY KEY,
+  ID_Empleado INT PRIMARY KEY AUTO_INCREMENT,
   Nombre VARCHAR(50),
   Direccion VARCHAR(100),
   Correo VARCHAR(50),

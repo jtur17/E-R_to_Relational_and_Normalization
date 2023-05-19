@@ -17,5 +17,7 @@ services:
       - "3307:3306"
     volumes:
 
-      # Tabla
       - ./db/01_create_tables.sql:/docker-entrypoint-initdb.d/01_create_tables.sql
+      - ./db/02_fill_tables.sql:/docker-entrypoint-initdb.d/02_fill_tables.sql
+      
+
